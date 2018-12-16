@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<title>Chinese room argument &#8211; A History of Artificial Intelligence</title>
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//ahistoryofai.wordpress.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="A History of Artificial Intelligence &raquo; Feed" href="https://ahistoryofai.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="A History of Artificial Intelligence &raquo; Comments Feed" href="https://ahistoryofai.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1532082729h&ver=5.0-RC3-43969"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s0.wp.com/_static/??-eJydU9lOwzAQ/CEWi14SD4hvsZ1tsq0v+Wjp37NOaOiFQbxEO/aMdzzeiGMA7V1Gl4UtEEzpySVxDNpbSJYMnm7Qs07pSTyWpaKSjhQyeUZbb4w/tviDP2AEVZQyyOp8MjjTyWlTOl7mBdHJNBAfkJ4tuXvKLonM+3vlP+ai1dfQvqowB6n3MKI7+pnbF4YKY887EYUqZDqhjB+FKsp4ujH+oJ/s2DYoGb+inPEkIuF8Hq83F63Tqg9et0HmyrDYkUSDlmktmQ2bs6qWA1+92WayqlSImBLw11KxkAdu9Is9W61MsY6vd7XSkvboME5BPCzvtJMbEYoS5DoMyB9uxNhQGni2Fj88zh+E1fn4zv9qy7M5tYYxx2bQ1PWYef69JmlguvQlaEfmgU3K+stdAdgaSbEl5VnDi9mEw6LFjshh9Fz2YzLfsCXKPkHE4GOGrY/2Flfpu317Wa+Wr+vlZrnafQLn57ig?cssminify=yes' type='text/css' media='all' />
+<style id='wpcom-admin-bar-inline-css' type='text/css'>
+
+			.admin-bar {
+				position: inherit !important;
+				top: auto !important;
+			}
+			.admin-bar .goog-te-banner-frame {
+				top: 32px !important
+			}
+			@media screen and (max-width: 782px) {
+				.admin-bar .goog-te-banner-frame {
+					top: 46px !important;
+				}
+			}
+			@media screen and (max-width: 480px) {
+				.admin-bar .goog-te-banner-frame {
+					position: absolute;
+				}
+			}
+		
+</style>
+<link rel='stylesheet' id='print-css-1-1' href='https://s2.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h&cssminify=yes' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/_static/??-eJx9TssOwjAM+yFKgMG0C+Jbsq60QW0yNRn8PtsBEELs5Idsy/AYnRe2wAZlcmOeIrECDoXY9VihoFqoM3NyD7XSEPTjbb3qBv5MeCPhZeLN1uKjqLlrRqqgCStxfOFaS8UTZpclyrf4KVkKZb6ejhCz9JiXwKWc96em3XWHtuluTyr0Y1E=?cssminify=yes' type='text/css' media='all' />
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJx9kFEKwjAMQC9kVycT9yOeZavZyGyb2qQbenr7MRFHFQIh5JHkRS9BoTc2XYH1lOOeID7WVE280/8A5XCMnUDl0L9hQ17Ai3ZJBZtG9Kw59WwiBkHK1UDW0rLF8+hALA6YuxEKXUc9WlCJIWbAS75qoAL3bYB+Rigt24iChM7cVATGJ5S8OXwUfz9spS7uXDft6dDWx2Y/vQBJS4U5'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ahistoryofai.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://ahistoryofai.com/chinese-room-argument/" />
+<link rel='shortlink' href='https://wp.me/Pas95g-1G' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fahistoryofai.com%2Fchinese-room-argument%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fahistoryofai.com%2Fchinese-room-argument%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Chinese room argument" />
+<meta property="og:url" content="https://ahistoryofai.com/chinese-room-argument/" />
+<meta property="og:description" content="Chinese room argument 1980 Philosopher John Searle formulated the Chinese room argument to discredit the idea that a computer can be programmed with the appropriate functions to behave the same way…" />
+<meta property="article:published_time" content="2018-12-01T19:28:17+00:00" />
+<meta property="article:modified_time" content="2018-12-16T21:37:46+00:00" />
+<meta property="og:site_name" content="A History of Artificial Intelligence" />
+<meta property="og:image" content="https://ahistoryofai.files.wordpress.com/2018/12/chineseroom.png" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:text:title" content="Chinese room argument" />
+<meta name="twitter:card" content="summary" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="search" type="application/opensearchdescription+xml" href="https://ahistoryofai.com/osd.xml" title="A History of Artificial Intelligence" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="theme-color" content="#4c4c4c" />
+<meta name="application-name" content="A History of Artificial Intelligence" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="From ancient civilization to the present day" /><meta name="msapplication-task" content="name=Edit page;action-uri=https://wordpress.com/page/ahistoryofai.com/104;icon-uri=https://s1.wp.com/i/icons/page.ico" /><meta name="msapplication-task" content="name=Write a post;action-uri=https://wordpress.com/post/ahistoryofai.com;icon-uri=https://s2.wp.com/i/icons/post.ico" /><meta name="msapplication-task" content="name=Moderate comments;action-uri=https://ahistoryofai.wordpress.com/wp-admin/edit-comments.php?comment_status=moderated;icon-uri=https://s2.wp.com/i/icons/comment.ico" /><meta name="msapplication-task" content="name=Upload new media;action-uri=https://ahistoryofai.wordpress.com/wp-admin/media-new.php;icon-uri=https://s2.wp.com/i/icons/media.ico" /><meta name="msapplication-task" content="name=Blog stats;action-uri=https://ahistoryofai.wordpress.com/wp-admin/index.php?page=stats;icon-uri=https://s1.wp.com/i/icons/stats.ico" /><meta name="description" content="Chinese room argument 1980 Philosopher John Searle formulated the Chinese room argument to discredit the idea that a computer can be programmed with the appropriate functions to behave the same way a human mind would. The argument asks the reader to imagine a computer that is programmed to understand how to read and communicate in&hellip;" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #4c4c4c; }
+</style>
+	<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+	<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+	<style type="text/css" id="syntaxhighlighteranchor"></style>
+<style type="text/css" id="custom-colors-css">.has-header-image .site-title a,.has-header-image .site-title a:visited{color:#fff}@media screen and (max-width:32.374em){.main-navigation ul ul{background:0 0 !important}.main-navigation ul ul a{color:inherit !important}}.widget_recent_comments a,.widget_recent_entries a,body,button,input,select,textarea{color:#c6c6c6}#infinite-footer .blog-info a:hover,#infinite-footer .blog-credits a:hover{color:#c6c6c6}.posts-navigation .nav-links a,.main-navigation ul ul a,.main-navigation>div>ul>li.current-menu-item>ul>li a,.main-navigation>div>ul>li.current_page_item>ul>li a{color:#6d6d6d}button:not(.menu-toggle),input[type=button],input[type=reset],input[type=submit],.button,#content #infinite-handle span button,.more-link{color:#6d6d6d}.site-main>.hentry:nth-child(n+2),.site .infinite-wrap>.hentry:nth-child(n+2),.entry-author-wrapper,.post-navigation,.comment,.page-links a:hover,.main-navigation li{border-color:#ddd}.site-main>.hentry:nth-child(n+2),.site .infinite-wrap>.hentry:nth-child(n+2),.entry-author-wrapper,.post-navigation,.comment,.page-links a:hover,.main-navigation li{border-color:rgba(221,221,221,.25)}#infinite-footer .blog-info a,#infinite-footer .blog-credits,#infinite-footer .blog-credits a{color:#ddd}.post-details,.post-details a,.post-details a:visited,.post-edit-link a,.post-edit-link a:visited{color:#c7c7c6}.post-tags li:first-child,.jetpack-social-navigation li a:hover,.widget_wpcom_social_media_icons_widget li a:hover,.jetpack-social-navigation li a:focus,.widget_wpcom_social_media_icons_widget li a:focus,.jetpack-social-navigation li a:active,.widget_wpcom_social_media_icons_widget li a:active{color:#c6c6c6}.jetpack-social-navigation li a,.widget_wpcom_social_media_icons_widget li a{color:#c6c6c6}.post-navigation .nav-links a:hover,.post-navigation .nav-links a:focus,.post-navigation .nav-links a:active,.entry-author .author-bio,.site-posted-on time,.site-description{color:#c6c6c6}.comment .comment-meta,.comment-form label,.light-text,.light-text a,.light-text a:visited,.widget_rss .rss-date,.widget_rss li>cite{color:#c7c7c6}.light-text a:hover{color:#c7c7c6}body{background-color:#4c4c4c}#infinite-footer .container{background-color:#4c4c4c}#infinite-footer .container{background-color:rgba(76,76,76,.7)}.post-edit-link a{background-color:#474747}.entry-author .author-title,.entry-title,.entry-title a,.entry-title a:visited,.site-posted-on strong,.site-title,.site-title a,.site-title a:visited,.entry-title a:hover,.site-title a:hover,h1,h2,h3,h4,h5,h6,.page-header:not(.page-header-light) h1,.comment .comment-meta .comment-author .fn{color:#c6c6c6}.comment-form input[type=email]:active,.comment-form input[type=email]:focus,.comment-form input[type=password]:active,.comment-form input[type=password]:focus,.comment-form input[type=search]:active,.comment-form input[type=search]:focus,.comment-form input[type=text]:active,.comment-form input[type=text]:focus,.comment-form input[type=url]:active,.comment-form input[type=url]:focus,.comment-form textarea:active,.comment-form textarea:focus,blockquote,input[type=email]:focus,input[type=password]:focus,input[type=search]:focus,input[type=text]:focus,input[type=url]:focus,textarea:focus{border-color:#fff}.comment .comment-meta .comment-metadata a:hover,.comment-form span.required,.pingback:before,.post-details a:hover,.post-edit-link a:active,.post-edit-link a:focus,.post-edit-link a:hover,.site-info a:hover,.trackback:before,a,a:visited{color:#fff}.main-navigation>div>ul>li.current-menu-item>a,.main-navigation>div>ul>li.current_page_item>a,a:active,a:focus,a:hover,.page-links a:hover{color:#fff}.posts-navigation .nav-links a,.main-navigation ul ul{background-color:#fff}button:not(.menu-toggle),input[type=button],input[type=reset],input[type=submit],.button,#content #infinite-handle span button,.more-link{background-color:#fcfcfc}</style>
+<link rel="icon" href="https://ahistoryofai.files.wordpress.com/2018/12/icon.png?w=30" sizes="32x32" />
+<link rel="icon" href="https://ahistoryofai.files.wordpress.com/2018/12/icon.png?w=45" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://ahistoryofai.files.wordpress.com/2018/12/icon.png?w=45" />
+<meta name="msapplication-TileImage" content="https://ahistoryofai.files.wordpress.com/2018/12/icon.png?w=45" />
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s1.wp.com/?custom-css=1&#038;csblog=as95g&#038;cscache=6&#038;csrev=133" />
+		</head>
+
+<body class="page-template-default page page-id-104 logged-in admin-bar no-customize-support custom-background wp-custom-logo wp-embed-responsive mp6 customizer-styles-applied highlander-enabled highlander-light custom-colors">
+
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<div id="hero-header" class="site-hero-section">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="inner">
+				<div class="site-branding">
+					<a href="https://ahistoryofai.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="153" height="160" src="https://ahistoryofai.files.wordpress.com/2018/12/logo-2.png" class="custom-logo" alt="A History of Artificial Intelligence" itemprop="logo" srcset="https://ahistoryofai.files.wordpress.com/2018/12/logo-2.png 153w, https://ahistoryofai.files.wordpress.com/2018/12/logo-2.png?w=143&amp;h=150 143w" sizes="(max-width: 153px) 100vw, 153px" data-attachment-id="912" data-permalink="https://ahistoryofai.com/logo-2/" data-orig-file="https://ahistoryofai.files.wordpress.com/2018/12/logo-2.png" data-orig-size="153,160" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Logo" data-image-description="" data-medium-file="https://ahistoryofai.files.wordpress.com/2018/12/logo-2.png?w=153" data-large-file="https://ahistoryofai.files.wordpress.com/2018/12/logo-2.png?w=153" /></a>
+												<p class="site-title"><a href="https://ahistoryofai.com/" rel="home">A History of Artificial Intelligence</a></p>
+													<p class="site-description">From ancient civilization to the present day</p>
+									</div><!-- .site-branding -->
+
+				
+				
+			</div><!-- .inner -->
+		</header><!-- #masthead -->
+	</div>
+
+		
+	
+	
+	<div id="content-wrapper" class="content-wrapper">
+		<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-104" class="post-104 page type-page status-publish hentry">
+			<header class="entry-header">
+			<h1 class="entry-title">Chinese room argument</h1>		</header><!-- .entry-header -->
+	<div class="entry-content">
+		<h1><span style="color:#ffffff;">Chinese room argument</span></h1>
+<h2><span style="color:#ffffff;">1980</span></h2>
+<p><span style="color:#ffffff;">Philosopher John Searle formulated the <strong>Chinese room argument</strong> to discredit the idea that a computer can be programmed with the appropriate functions to behave the same way a human mind would.</span></p>
+<p><img class="alignright" src="https://ahistoryofai.files.wordpress.com/2018/12/chineseroom.png?w=1100" /></p>
+<p><span style="color:#ffffff;">The argument asks the reader to imagine a computer that is programmed to understand how to read and communicate in Chinese. It would work with taking in Chinese characters and output other Chinese characters in response. If the computer passed the <strong><a style="color:#ffffff;" href="https://ahistoryofai.com/turing-test/">Turing test</a></strong>, it could convince a human that the program is itself a Chinese speaker. The position of strong artificial intelligence holds that the computer literally understands Chinese and weak artificial intelligence if it is only simulating this Chinese comprehension. <sup id="cite_ref-Strong_AI_in_Searle_(1980)_12-0" class="reference"></sup></span></p>
+<p><span style="color:#ffffff;">If a human had an English version of the computer program, he or she could could take in Chinsese words the same way the computer would and output characters the same way the computer would. Searle argues there&#8217;s no difference inherent between this human and the computer even though the human doesn&#8217;t understand the Chinese language itself. He therefore concludes the computer wouldn&#8217;t understand Chinese either.</span></p>
+<p><span style="color:#ffffff;">Instead, Searle supposes there&#8217;s an intentionality that the machine would need to argue for strong artificial intelligence. As computers and other machines lack this method of thinking, they don&#8217;t have a mind in our traditional sense of the word. Searle&#8217;s work in artificial intelligence and the philosophy of the mind would continue to take center stage of debates in the disciplines.</span><br />
+<span style="color:#ffffff;"><a style="color:#ffffff;" href="http://ahistoryofai.com"><strong>back&#8230;</strong></a></span></p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-press-this"><a rel="nofollow noopener noreferrer" data-shared="" class="share-press-this sd-button share-icon no-text" href="https://ahistoryofai.com/chinese-room-argument/?share=press-this" target="_blank" title="Click to Press This!"><span></span><span class="sharing-screen-reader-text">Click to Press This! (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-104" class="share-twitter sd-button share-icon no-text" href="https://ahistoryofai.com/chinese-room-argument/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-104" class="share-facebook sd-button share-icon no-text" href="https://ahistoryofai.com/chinese-room-argument/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow noopener noreferrer" data-shared="sharing-google-104" class="share-google-plus-1 sd-button share-icon no-text" href="https://ahistoryofai.com/chinese-room-argument/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-154471466-104-5c16d0d425896' data-src='//widgets.wp.com/likes/index.html?ver=20180319#blog_id=154471466&amp;post_id=104&amp;origin=ahistoryofai.wordpress.com&amp;obj_id=154471466-104-5c16d0d425896' data-name='like-post-frame-154471466-104-5c16d0d425896'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>	</div><!-- .entry-content -->
+
+			<div class="entry-footer">
+			<span class="post-edit-link"><a class="post-edit-link" href="https://wordpress.com/page/ahistoryofai.com/104">Edit <span class="screen-reader-text">"Chinese room argument"</span></a></span>		</div><!-- .entry-footer -->
+	</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+		</div><!-- #content -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+						<div class="site-info">
+				<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a>
+				
+							</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #content-wrapper -->
+</div><!-- #page -->
+
+<!--  -->
+	<script type="text/javascript">
+	/* <![CDATA[ */
+		jQuery(document).ready( function($) {
+			function doFollowingHover() {
+				$('#wp-admin-bar-follow > a').unbind( '.unfollow' );
+
+				$('#wp-admin-bar-follow > a').bind( 'mouseover.unfollow', function() {
+
+					$(this).html( "Unfollow" ).parent( 'li' ).addClass( 'unfollow' );
+				});
+				$('#wp-admin-bar-follow > a').bind( 'mouseout.unfollow', function() {
+					$(this).html( "Following" ).parent( 'li' ).removeClass( 'unfollow' );
+				});
+			}
+							doFollowingHover();
+			
+			$('#wp-admin-bar-follow > a').click( function( e ) {
+				$('#wp-admin-bar-follow > a').unbind( '.unfollow' );
+
+				e.preventDefault();
+
+				var link = $( this ), li = $( '#wp-admin-bar-follow' ), timeout = 0;
+
+				if ( li.hasClass( 'subscribed' ) ) {
+					li.removeClass( 'subscribed' ).removeClass( 'unfollow' );
+					link.html( "Follow" );
+
+					$('body').append( $( 'div.wpcom-bubble' ).removeClass( 'fadein' ) ).off( 'click.bubble' );
+
+					var action = 'ab_unsubscribe_from_blog';
+				} else {
+					li.addClass( 'subscribed' ).removeClass( 'unfollow' );
+					link.html( "Following" );
+
+						var left = 131 - link.width();
+						li.append( $( 'div.wpcom-bubble' ).css( { left: '-' + left + 'px' } ) );
+						$( 'div.bubble-txt', 'div.wpcom-bubble' ).html( "New posts from this blog will now appear in <a target=\"_blank\" href=\"http:\/\/wordpress.com\/\">your reader<\/a>. You can manage email alerts from your <a target=\"_blank\" href=\"http:\/\/wordpress.com\/following\/edit\/\">subscriptions page<\/a>." );
+
+						$( 'div.wpcom-bubble.action-bubble' ).addClass( 'fadein' );
+
+						setTimeout( function() {
+							$('body').on( 'click.bubble touchstart.bubble', function(e) {
+								if ( !$(e.target).hasClass('wpcom-bubble') && !$(e.target).parents( 'div.wpcom-bubble' ).length )
+									hideBubble();
+							});
+							setTimeout( hideBubble, 15000 );
+						}, 500 );
+
+					var action = 'ab_subscribe_to_blog';
+					$('#wp-admin-bar-follow > a').bind( 'mouseout.shift', function() {
+						doFollowingHover();
+						$(this).unbind( '.shift' );
+					});
+				}
+
+				var nonce = link.attr( 'href' ).split( '_wpnonce=' );
+				nonce = nonce[1];
+
+				$.post( "https:\/\/ahistoryofai.com\/wp-admin\/admin-ajax.php", {
+					'action': action,
+					'_wpnonce': nonce,
+					'source': 'admin_bar',
+					'blog_id': 154471466				});
+			});
+		});
+	/* ]]> */
+	</script>
+	<div style="display:none">
+	</div>
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201850y'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":"4e7e0941ed1245594caaa3ee458f6555"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+<div id="report-form-window" style="display:none;"></div>
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/ahistoryofai.com\/chinese-room-argument\/":104};
+	</script>
+				<script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/s2.wp.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var comment_like_text = {"loading":"Loading..."};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpNotesArgs = {"cacheBuster":"desktop\/2.4.0-13279-g67a63e0","iframeUrl":"https:\/\/widgets.wp.com\/notifications\/","iframeAppend":"2","iframeScroll":"no","wide":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcom_tos_report_form = {"ajaxurl":"\/wp-admin\/admin-ajax.php","isLoggedoutUser":"","post_ID":"104","current_url":"https:\/\/ahistoryofai.com\/chinese-room-argument","report_this_content":"Report this content"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var actionbardata = {"siteID":"154471466","siteName":"A History of Artificial Intelligence","siteURL":"https:\/\/ahistoryofai.com","icon":"<img alt='' src='https:\/\/ahistoryofai.files.wordpress.com\/2018\/12\/icon.png?w=45' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"1","canCustomizeSite":"1","isFollowing":"1","themeSlug":"pub\/independent-publisher-2","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/ahistoryofai.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fahistoryofai.com%2Fchinese-room-argument%2F","themeURL":"https:\/\/wordpress.com\/theme\/independent-publisher-2\/","xhrURL":"https:\/\/ahistoryofai.com\/wp-admin\/admin-ajax.php","nonce":"7fe05a1d6e","isSingular":"1","isFolded":"","isLoggedIn":"1","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"7a8482ede3\" \/>","referer":"https:\/\/ahistoryofai.com\/chinese-room-argument\/","canFollow":"1","feedID":"90206864","statusMessage":"","customizeLink":"https:\/\/ahistoryofai.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fahistoryofai.wordpress.com%2Fchinese-room-argument%2F","postID":"104","shortlink":"https:\/\/wp.me\/Pas95g-1G","canEditPost":"1","editLink":"https:\/\/wordpress.com\/page\/ahistoryofai.com\/104","statsLink":"https:\/\/wordpress.com\/stats\/post\/104\/ahistoryofai.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get help setting up your theme","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/ahistoryofai.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fahistoryofai.com%2Fchinese-room-argument%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJydU+1WgzAMfSG7OueO/vH4LKVkNEA/bFq2vb2pCs6xcTZ/UNrk3luSXOQ+CO1dApdkS7KGATWEw6qlB8kpdLrPNVDJJYO6q/xh2oygkW+zCH1u0JHssWPSR4YMRrm6h3hJUdUWnahUXPH7XG2UoqNL6mCwMT0/CeI8svAh0xWc196K3yuvcxhnOSS+i2hLNZWkPQa4h/QncE5MBizDQq4kuhoC8MJYPvdIBqJ4KhJODdiohH7WnNv4V1L/E6MOAxfjOrHzOpPY4cwANwjx+CXpiCGJr4FcskVmWiTtI5z64hRRqWJAB5d8w2mbKSltlsblfIKfVZRJeSeGWWNm+Mk9y+DkSUQIPibuVbTn55vsahWxs8tVfoAYsVQ+xe5USJH7NfPgKUkXkxXStFtAB09cSK+Qf0WjIrpmfDPp3b6tt8/r7eZl8/rYfgIoLqOR'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-google-plus-1', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>		<iframe src='https://widgets.wp.com/likes/master.html?ver=20180319#ver=20180319' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script src="//stats.wp.com/w.js?56" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['identifyUser', 79929543, 'hussainather']);
+_tkq.push(['storeContext', {'blog_id':'154471466','blog_tz':'0','user_lang':'en','blog_lang':'en'}]);
+_stq.push(['view', {'blog':'154471466','v':'wpcom','tz':'0','user':'1','user_id':'79929543','post':'104','subd':'ahistoryofai'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1zNDZ8S252Wis9XUQyb3YrcUVIU2R0VH5TdVglcXpmaUtLNmxTTXZXWElnRExSfEpUVm05SlpEZzZWOEtlbW5nZHV0dkhDNjhwP35JbkdHLyZqTUVOVCUyQWZEblhFQXpnMEJbbkFGLHdWYmJoSHIydlRkRzJ4X0pbaVhlMFNzejAleDVlQX51a1NLeVBXdF1yX00uV1E5NkRZWU16dl1dTVRnUD94fnpFJnBDczdbcmhpL29CUXxrTi96ajJuSTU1eV8mU3E9ZHF+dlNNVn4wWFpCR2FzK3E0bFBPSUtWM1B3UmpJLUxqMWk3UGlSK3F0YXktRTMlRDF3ZU85ZS44TT1PdFRITSY0QW9LcmNfbFc/V3RycG94cEdZUWx2'}]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+		<div id="wpadminbar" class="nojq nojs ltr">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+						<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+			
+		<li id="wp-admin-bar-blog" class="menupop my-sites mb-trackable"><a class="ab-item"  aria-haspopup="true" href="https://wordpress.com/stats/ahistoryofai.com">My Sites</a>			<div class="ab-sub-wrapper">		<ul id="wp-admin-bar-blog-default" class="ab-submenu">
+			
+		<li id="wp-admin-bar-switch-site"><a class="ab-item"  href="https://wordpress.com/sites">Switch Site</a>		</li>
+		<li id="wp-admin-bar-blog-info" class="has-blavatar"><a class="ab-item"  href="https://ahistoryofai.com/"><div class="ab-site-icon"><img class="avatar" src="https://ahistoryofai.files.wordpress.com/2018/12/icon.png?w=45" alt="Current site avatar" /> </div><span class="ab-site-title">A History of Artific&hellip;</span><span class="ab-site-description">ahistoryofai.com</span></a>		</li>
+		<li id="wp-admin-bar-blog-stats" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/stats/ahistoryofai.com">Stats <img style="width: 95px; margin: 0; float: right;" src="https://ahistoryofai.wordpress.com/wp-includes/charts/admin-bar-hours-scale-2x.php?masterbar=1" alt="Stats" title="Showing site views per hour for the last 48 hours. Click for full Site Stats." /></a>		</li>
+		<li id="wp-admin-bar-activity" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/activity-log/ahistoryofai.com">Activity</a>		</li>
+		<li id="wp-admin-bar-plan" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/plans/ahistoryofai.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-plan">Plan</a><a href="https://wordpress.com/plans/ahistoryofai.com" class="ab-secondary" id="wp-admin-bar-plan-badge">Premium</a></div>		</li>		</ul>
+			<ul id="wp-admin-bar-publish" class="ab-submenu">
+			
+		<li id="wp-admin-bar-publish-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Manage</div>		</li>
+		<li id="wp-admin-bar-new-page" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/pages/ahistoryofai.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-edit-page">Site Pages</a><a href="https://wordpress.com/page/ahistoryofai.com" class="ab-secondary" id="wp-admin-bar-new-page-badge">Add</a></div>		</li>
+		<li id="wp-admin-bar-new-post" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/posts/ahistoryofai.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-edit-post">Blog Posts</a><a href="https://wordpress.com/post/ahistoryofai.com" class="ab-secondary" id="wp-admin-bar-new-post-badge">Add</a></div>		</li>
+		<li id="wp-admin-bar-new-attachment" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/media/ahistoryofai.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-edit-attachment">Media</a><a href="https://wordpress.com/media/ahistoryofai.com" class="ab-secondary" id="wp-admin-bar-new-attachment-badge">Add</a></div>		</li>
+		<li id="wp-admin-bar-comments" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/comments/ahistoryofai.com">Comments</a>		</li>		</ul>
+			<ul id="wp-admin-bar-look-and-feel" class="ab-submenu">
+			
+		<li id="wp-admin-bar-look-and-feel-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Personalize</div>		</li>
+		<li id="wp-admin-bar-themes" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://ahistoryofai.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fahistoryofai.wordpress.com%2Fchinese-room-argument%2F" class="ab-item ab-primary mb-icon" id="wp-admin-bar-cmz">Customize</a><a href="https://wordpress.com/themes/ahistoryofai.com" class="ab-secondary" id="wp-admin-bar-themes">Themes</a></div>		</li>		</ul>
+			<ul id="wp-admin-bar-configuration" class="ab-submenu">
+			
+		<li id="wp-admin-bar-configuration-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Configure</div>		</li>
+		<li id="wp-admin-bar-sharing" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/sharing/ahistoryofai.com">Sharing</a>		</li>
+		<li id="wp-admin-bar-users-toolbar" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/people/team/ahistoryofai.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-people">People</a><a href="https://wordpress.com/people/new/ahistoryofai.com" class="ab-secondary" id="wp-admin-bar-people-add">Add</a></div>		</li>
+		<li id="wp-admin-bar-plugins"><a class="ab-item"  href="https://wordpress.com/plugins/wpcom-masterbar-redirect/ahistoryofai.com">Plugins</a>		</li>
+		<li id="wp-admin-bar-domains" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/domains/ahistoryofai.com" class="ab-item ab-primary mb-icon" id="wp-admin-bar-domains">Domains</a><a href="https://wordpress.com/domains/add/ahistoryofai.com" class="ab-secondary" id="wp-admin-bar-domains-add">Add</a></div>		</li>
+		<li id="wp-admin-bar-blog-settings" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/settings/general/ahistoryofai.com">Settings</a>		</li>
+		<li id="wp-admin-bar-legacy-dashboard" class="mb-icon"><a class="ab-item"  href="https://ahistoryofai.wordpress.com/wp-admin/">WP Admin</a>		</li>		</ul>
+	</div>		</li>
+		<li id="wp-admin-bar-jumptotop-button-menu"><a class="ab-item"  href="#"><div id="jumptotop"><span class="noticon noticon-top"></span></div></a>		</li>
+		<li id="wp-admin-bar-newdash" class="menupop mb-trackable"><a class="ab-item"  aria-haspopup="true" href="https://wordpress.com/">Reader</a>			<div class="ab-sub-wrapper">		<ul id="wp-admin-bar-newdash-default" class="ab-submenu">
+			
+		<li id="wp-admin-bar-streams-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Streams</div>		</li>
+		<li id="wp-admin-bar-following" class="inline-action">		<div class="ab-item ab-empty-item" ><a href="https://wordpress.com/" class="ab-item ab-primary mb-icon" id="wp-admin-bar-followed-sites">Followed Sites</a><a href="https://wordpress.com/following/edit" class="ab-secondary" id="wp-admin-bar-reader-followed-sites-manage">Manage</a></div>		</li>
+		<li id="wp-admin-bar-conversations" class="mb-icon"><a class="ab-item"  href="http://wordpress.com/read/conversations">Conversations</a>		</li>
+		<li id="wp-admin-bar-discover-discover" class="mb-icon-spacer"><a class="ab-item"  href="https://wordpress.com/discover">Discover</a>		</li>
+		<li id="wp-admin-bar-discover-search" class="mb-icon-spacer"><a class="ab-item"  href="https://wordpress.com/read/search">Search</a>		</li>
+		<li id="wp-admin-bar-my-activity-my-likes" class="mb-icon-spacer"><a class="ab-item"  href="https://wordpress.com/activities/likes">My Likes</a>		</li>		</ul>
+	</div>		</li>		</ul>
+			<ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+			
+		<li id="wp-admin-bar-notes" class="menupop">		<div class="ab-item ab-empty-item" ><span id="wpnt-notes-unread-count" class="wpnt-loading wpn-read"></span><span class="noticon noticon-bell"></span><span class="ab-text">Notifications</span></div><div id="wpnt-notes-panel2" style="display:none" lang="en" dir="ltr"><div class="wpnt-notes-panel-header"><span class="wpnt-notes-header"></span><span class="wpnt-notes-panel-link"></span></div></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar mb-trackable"><a class="ab-item"  aria-haspopup="true" href="https://wordpress.com/me/"><img alt='' src='https://1.gravatar.com/avatar/4e7e0941ed1245594caaa3ee458f6555?s=32&#038;d=mm&#038;r=G' class='avatar avatar-32' height='32' width='32' /><span class="ab-text">Me</span></a>			<div class="ab-sub-wrapper">		<ul id="wp-admin-bar-user-actions" class="ab-submenu">
+			
+		<li id="wp-admin-bar-user-info" class="user-info user-info-item">		<div class="ab-item ab-empty-item" tabindex="-1"><img alt='' src='https://1.gravatar.com/avatar/4e7e0941ed1245594caaa3ee458f6555?s=128&#038;d=mm&#038;r=G' class='avatar avatar-128' height='128' width='128' /><span class="display-name">hussainather</span><a class="username" href="http://gravatar.com/hussainather">@hussainather</a><form action="https://ahistoryofai.wordpress.com/wp-login.php?action=logout&amp;redirect_to=http%3A%2F%2Fahistoryofai.com%2F&amp;_wpnonce=40c7ffb11d" method="post"><button class="ab-sign-out" type="submit">Sign Out</button></form></div>		</li>
+		<li id="wp-admin-bar-profile-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Profile</div>		</li>
+		<li id="wp-admin-bar-my-profile" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me">My Profile</a>		</li>
+		<li id="wp-admin-bar-account-settings" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me/account">Account Settings</a>		</li>
+		<li id="wp-admin-bar-billing" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me/purchases">Manage Purchases</a>		</li>
+		<li id="wp-admin-bar-security" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me/security">Security</a>		</li>
+		<li id="wp-admin-bar-notifications" class="mb-icon mb-trackable"><a class="ab-item"  href="https://wordpress.com/me/notifications">Notifications</a>		</li>
+		<li id="wp-admin-bar-special-header" class="ab-submenu-header">		<div class="ab-item ab-empty-item" >Special</div>		</li>
+		<li id="wp-admin-bar-get-apps" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/me/get-apps">Get Apps</a>		</li>
+		<li id="wp-admin-bar-help" class="mb-icon"><a class="ab-item"  href="https://wordpress.com/help">Help</a>		</li>		</ul>
+	</div>		</li>
+		<li id="wp-admin-bar-ab-new-post" class="mb-trackable"><a class="ab-item"  href="https://wordpress.com/post/ahistoryofai.com"><span>Write</span></a>		</li>		</ul>
+				</div>
+							<a class="screen-reader-shortcut" href="https://ahistoryofai.wordpress.com/wp-login.php?action=logout&#038;_wpnonce=40c7ffb11d">Log Out</a>
+					</div>
+
+	
+<script type="text/javascript">
+/* <![CDATA[ */
+var clickDebugLink;
+
+jQuery(document).ready( function($) {
+	var single = false, w = 1000,
+		supe = false;
+
+	$(document.body).load(function(){ $('#wpadminbar img.grav-hashed').removeClass('grav-hashed'); }); // hack to hide the gravatar hovercard
+
+	if ( single && supe )
+		w = 1385;
+	else if ( supe )
+		w = 1200;
+
+	// debug bar extra
+	clickDebugLink = function( parent_id, obj ) {
+
+		$('#'+parent_id).children('div').hide();
+
+		document.getElementById( obj.href.substr( obj.href.indexOf( '#' ) + 1 ) ).style.display = 'block';
+		$( obj.href.substr( obj.href.indexOf( '#' ) ) ).show()
+
+		$(obj).parent().addClass('current').siblings('li').removeClass('current');
+
+		return false;
+	};
+
+	$( '#wpadminbar #wp-admin-bar-shortlink' ).click( function() {
+		$( '#adminbar-shortlink-input' ).select();
+	});
+
+	// skip tap-to-hover on site switcher for mobile
+	if ( 'ontouchstart' in window ) {
+		$('#wp-admin-bar-switch-site').on( 'touchstart', function( event ) {
+			if ( $( window ).width() > 782 ) {
+				return;
+			}
+			event.stopPropagation();
+			$( event.target ).first( 'a' ).click();
+		});
+	}
+
+});
+/* ]]> */
+</script>
+	<div class="wpcom-bubble action-bubble">
+		<div class="bubble-txt"></div>
+	</div>
+	<script type="text/javascript">function hideBubble() { jQuery('body').append( jQuery( 'div.wpcom-bubble' ).removeClass( 'fadein' ) ).off( 'click.bubble touchstart.bubble' ); jQuery(document).off( 'scroll.bubble' ); };</script>
+		<script type="text/javascript">
+	jQuery( '#wp-admin-bar-jumptotop-button-menu a' ).click( function( e ) {
+		e.preventDefault();
+		jQuery( 'html, body' ).animate( { scrollTop: 0 }, 'fast' );
+	} );
+	function hideShowTbJumpToTop() {
+		var total_width = 0;
+		// Calculate total width taken by items minus our button to see if it'll
+		// overlap with other toolbar menus.
+		jQuery( '#wp-admin-bar-root-default > li' ).each( function() {
+			var self = jQuery( this );
+			if ( 'wp-admin-bar-jumptotop-button-menu' != self.attr( 'id' ) )
+				total_width += self.width();
+		});
+		if ( jQuery( '#wp-admin-bar-jumptotop-button-menu' ).position()['left'] - total_width < 10 ) {
+			jQuery( '#jumptotop' ).animate( { 'top': '-50px' }, 'fast' );
+		} else if (  jQuery( window ).scrollTop() >= 350 && parseInt( jQuery( '#jumptotop' ).css( 'top' ) ) < 0 ) {
+			if ( jQuery( '#wp-admin-bar-jumptotop-button-menu' ).position()['left'] - total_width < 10 )
+			   return;
+			jQuery( '#jumptotop' ).animate( { 'top': 0 }, 'fast' );
+		} else if (  jQuery( window ).scrollTop() < 1 && parseInt( jQuery( '#jumptotop' ).css( 'top' ) ) >= 0 ) {
+			jQuery( '#jumptotop' ).animate( { 'top': '-50px' }, 'fast' );
+		}
+	}
+	// handle on page load if auto scrolling to a position
+	hideShowTbJumpToTop();
+	// bind to scrolll event
+	var jumpToTopTimer = null;
+	jQuery( window ).scroll( function() {
+		clearTimeout( jumpToTopTimer );
+		jumpToTopTimer = setTimeout( jumpToTopRefresh, 150 );
+	} );
+	var jumpToTopRefresh = function() {
+		hideShowTbJumpToTop();
+	};
+	</script>
+	<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
