@@ -1,27 +1,29 @@
-#gradmodernera {
-  background-image: linear-gradient(#474e5d, #d4fb78, #474e5d);
-}
 
-#gradinformationage {
+/* Gradients for each era */
+#informationage {
   background-image: linear-gradient(#474e5d, #ffffff, #474e5d);
 }
 
-#gradrenaissance {
-  background-image: linear-gradient(#474e5d, #005392, #474e5d);
+#modernhistory {
+  background-image: linear-gradient(#474e5d, #d4fb78, #474e5d);
 }
 
-#gradantiquity {
-  background-image: linear-gradient(#474e5d, #000000, #474e5d);
-}
-
-#gradmiddleages {
-  background-image: linear-gradient(#474e5d, #f02d38, #474e5d);
-}
-
-#gradgoldenyears {
+#goldenyears {
   background-image: linear-gradient(#474e5d, #daa520, #474e5d);
 }
 
+
+#renaissance {
+  background-image: linear-gradient(#474e5d, #005392, #474e5d);
+}
+
+#middleages {
+  background-image: linear-gradient(#474e5d, #f02d38, #474e5d);
+}
+
+#antiquity {
+  background-image: linear-gradient(#474e5d, #000000, #474e5d);
+}
 
 figure {
   display: inline-block;
@@ -236,4 +238,3 @@ body {
     left: 0%;
   }
 }
-
