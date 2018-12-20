@@ -3,4 +3,4 @@
 
 Scripts and content to share the grand narrative of artificial intelligence from ancient civilization to the present day.
 
-By Hussain Ather (http://hussainathercom)
+By Hussain Ather (http://hussainather.com)
