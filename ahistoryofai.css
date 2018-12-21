@@ -1,27 +1,62 @@
-#gradmodernera {
-  background-image: linear-gradient(#474e5d, #d4fb78, #474e5d);
+body #content {
+    margin-top : -60px;
 }
 
-#gradinformationage {
+#cookie-message {
+    z-index: -1;
+    position:relative;
+}
+/* Remove space between header and content*/
+body.home #content {
+margin-top: -100px;
+}
+
+/* Social media share buttons */
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* Gradients for each era */
+#informationage {
   background-image: linear-gradient(#474e5d, #ffffff, #474e5d);
 }
 
-#gradrenaissance {
-  background-image: linear-gradient(#474e5d, #005392, #474e5d);
+#modernhistory {
+  background-image: linear-gradient(#474e5d, #d4fb78, #474e5d);
 }
 
-#gradantiquity {
-  background-image: linear-gradient(#474e5d, #000000, #474e5d);
-}
-
-#gradmiddleages {
-  background-image: linear-gradient(#474e5d, #f02d38, #474e5d);
-}
-
-#gradgoldenyears {
+#goldenyears {
   background-image: linear-gradient(#474e5d, #daa520, #474e5d);
 }
 
+
+#renaissance {
+  background-image: linear-gradient(#474e5d, #005392, #474e5d);
+}
+
+#middleages {
+  background-image: linear-gradient(#474e5d, #f02d38, #474e5d);
+}
+
+#antiquity {
+  background-image: linear-gradient(#474e5d, #000000, #474e5d);
+}
 
 figure {
   display: inline-block;
@@ -87,11 +122,12 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* The actual timeline (background) */
 .timeline {
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+    border: 20px solid black;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -108,7 +144,7 @@ body {
 
 /* Container around content */
 .container {
-  padding: 30px 50px;
+  padding: 20px 30px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -134,6 +170,7 @@ body {
   left: 25%;
     z-index:1;
     position:relative;
+    top: 0px;
 }
 /* Fix the circle for containers in the center */
 .center::after {
@@ -212,7 +249,7 @@ body {
 
 /* Full-width containers */
   .container {
-    width: 100vw;
+    width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
@@ -234,3 +271,4 @@ body {
     left: 0%;
   }
 }
+
